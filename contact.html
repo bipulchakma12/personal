@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .card {
+            border-radius: 15px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .nav-link:hover {
+            color: #ffdd57 !important;
+        }
+
+        .inner-about img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .inner-about {
+            position: relative;
+
+        }
+
+        .inner-about a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .inner-about::after {
+            position: absolute;
+            content: '';
+            background-color: #000;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            opacity: 0.6;
+        }
+
+        .inner-about .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 9;
+            text-transform: uppercase;
+            text-align: center;
+
+        }
+
+        .inner-about .content h2 {
+            font-size: 32px;
+            font-weight: 800;
+            color: #fff;
+        }
+
+        .inner-about .content p {
+            font-size: 14px;
+            font-weight: 400;
+            color: #fff;
+        }
+
+        .image img {
+            width: 100%;
+        }
+
+        .contact {
+            background-color: #0d1117;
+            color: #a4c5f0;
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-success sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-dark" href="index.html">BIPUL CHAKMA</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 column-gap-4">
+                    <li class="nav-item"><a class="nav-link  text-light active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link  text-light" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link  text-light" href="Portfolio.html">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link  text-light" href="service.html">Service</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link  text-light" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="inner-about">
+        <img src="/image/1.jpg" alt="">
+        <div class="content">
+            <h2>ABOUT</h2>
+            <p><a href="index.html">Home</a> / <a href="about.html">ABOUT</a></p>
+        </div>
+    </section>
+
+
+
+    <section id="contact" class="py-5 contact ">
+        <div class="container">
+            <h2 class="text-center mb-4">Contact Us</h2>
+            <div class="row border">
+                <div class="col mt-5 left-p" style="padding-left: 340px;">
+                    <h4 class="card-title mb-0" style="padding-bottom: 15px;">My Address</h4>
+                    <small class="">Bangladesh – Dhaka </small>
+                    <h4 class="card-title mb-0" style="padding-bottom: 15px; padding-top: 40px;">Email</h4>
+                    <small class=""><a style="text-decoration: none;color: #fff;"
+                            href="mailto:name@example.com">name@example.com</a></small>
+                    <div>
+                        <h4 class="card-title mb-0" style="padding-bottom: 15px; padding-top: 40px;">Whatsapp</h4>
+                        <small class=""><a style="text-decoration: none; color: #fff;"
+                                href="tel:01*********">01*********</a></small>
+
+                    </div>
+                </div>
+                <div class="col-md-5  ">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8">
+                            <form id="contactForm">
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Your Name</label>
+                                    <input type="text"  class="form-control" id="name" placeholder="Enter your name" />
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email Address</label>
+                                    <input type="email" class="form-control" id="email"
+                                        placeholder="name@example.com" />
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Your Message</label>
+                                    <textarea class="form-control" id="message" rows="5"
+                                        placeholder="Write your message here..."></textarea>
+                                </div>
+
+                                <div class="text-center">
+                                    <button type="submit" class="btn btn-primary">
+                                        Send Message
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <script>
+        const form = document.getElementById("contactForm");
+
+        form.addEventListener("submit", function (event) {
+            const name_variable = document.getElementById("name").value.trim();
+            const email_variable = document.getElementById("email").value.trim();
+            // const subjectl_variable = document.getElementById("subject").value.trim();
+
+
+            if (name_variable === "" || email_variable === "") {
+                alert("Please fill in all fields.");
+                event.preventDefault(); 
+            } else {
+                alert("Form submitted successfully!");
+            }
+        });
+    </script>
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

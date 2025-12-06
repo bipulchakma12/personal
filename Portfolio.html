@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+        .nav-link:hover {
+            color: #ffdd57 !important;
+        }
+
+        .slide {
+            background: #ffcc33;
+            color: #212529;
+            padding: 80px 0 60px;
+            border-radius: 0 0 50px 50px;
+        }
+
+        .card {
+     
+            transition: 0.4s;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg bg-success sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-dark" href="index.html">BIPUL CHAKMA</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 column-gap-4">
+                    <li class="nav-item"><a class="nav-link  text-light active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link  text-light" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link  text-light" href="Portfolio.html">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link  text-light" href="service.html">Service</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link  text-light" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="text-center slide bg-warning
+    ">
+        <div class="container">
+            <h1>Bipul Chakma</h1>
+            <p>Computer Science Student | Web Developer</p>
+        </div>
+    </section>
+
+    <section class="container py-5">
+        <h1 class="text-center mb-5 fw-bold">Education</h1>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card text-center bg-info-subtle text-dark p-3">
+                    <h5>Diploma in Computer Science</h5>
+                    <p>Mirpur Polytechnic Institute <br>CGPA:0.00</p>
+                    <small>2021 - 2024</small>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-center bg-info-subtle text-dark p-3">
+                    <h5>Secondary School Certificate</h5>
+                    <p>Uluchari Mouza High School <br>GPA: 4.00</p>
+                    <small>2019 - 2020</small>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-center bg-info-subtle text-dark p-3">
+                    <h5>Junior School Certificate</h5>
+                    <p>Uluchari Mouza High School <br>GPA: 5.00</p>
+                    <small>2017 - 2018</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="py-5">
+        <div class="container">
+            <h2 class="fw-bold text-center pb-5">SPECIAL SKILL</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card">
+                        <img src="/image/web.jfif" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Web Development</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                                to additional content. This content is a little bit longer.</p>
+                            <a href="#" class="card-link btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="/image/app.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">App Development</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                                to additional content. This content is a little bit longer.</p>
+                            <a href="#" class="card-link btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="/image/bootstarp.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Bootstarp</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                                to additional content.</p>
+                            <a href="#" class="card-link btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="/image/javascript.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Javascript</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                                to additional content. This content is a little bit longer.</p>
+                            <a href="#" class="card-link btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="/image/bootstarp.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Bootstarp</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                                to additional content.</p>
+                            <a href="#" class="card-link btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="/image/javascript.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Javascript</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                                to additional content. This content is a little bit longer.</p>
+                            <a href="#" class="card-link btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center pb-3 fs-2 fw-bold text-uppercase mb-5">Training information</h2>
+            <div class="row row-gap-3">
+                <div class="col-lg-6">
+                    <div class="card bg-dark text-light">
+                        <div class="card-body ">
+                            <h4 class="card-title fw-bold text-primary text-center">WEB DEVELOPMENT</h4>
+                            <h6 class="text-center">European IT Institute </h6>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus,
+                                iusto. Consequuntur accusantium labore nulla repellat, quia nam eaque minus incidunt
+                                quam totam praesentium fuga est laboriosam harum dignissimos saepe at. Quasi autem quo
+                                fuga, vel, repellendus rerum commodi accusantium optio quae tenetur dolorem adipisci
+                                quos totam nobis modi? Aliquam dolores sequi sint nam! Hic, ex perferendis. Voluptatum
+                                animi nam saepe est esse nobis eligendi, architecto laboriosam. Eveniet totam porro </p>
+                            <a href="#" class="card-link btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card bg-dark text-light">
+                        <div class="card-body">
+                            <h4 class="card-title fw-bold text-primary text-center">APP DEVELOPMENT</h4>
+                              <h6 class="text-center">European IT Institute</h6>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod quia
+                                reiciendis sapiente dolorem, officia, nemo nisi perspiciatis labore aliquam maiores
+                                unde. Libero amet sapiente quisquam perspiciatis quod, rem nam sit, omnis officia optio
+                                repudiandae a odio distinctio sunt vero quas quaerat nemo necessitatibus aperiam
+                                voluptatem. Excepturi iure quisquam tempore, vero natus repellat repudiandae, autem
+                                nostrum minima veritatis sunt ad exercitationem quo officia adipisci, earum quas ea
+                                cupiditate nesciunt </p>
+                            <a href="#" class="card-link btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+   <section class="container py-5">
+  <h1 class="text-center mb-5 fw-bold mb-3">Work Experience</h1>
+  <div class="row g-4">
+    <div class="col-md-4">
+      <div class="card card-body text-center">
+    
+          <h5 class="card-title fw-bold">Facebook</h5>
+          <p class="text-muted mb-1">Software Engineer</p>
+          <small>2021 - 2024</small>
+          <a href="#" class=" card-link btn btn-outline-primary mt-3">Read More</a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card  card-body text-center">
+         
+          <h5 class="card-title fw-bold">YouTube</h5>
+          <p class="text-muted mb-1">Software Engineer</p>
+          <small>2019 - 2020</small>
+          <a href="#" class="btn btn-outline-danger mt-3">Read More</a>
+
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card card-body text-center">
+         
+          <h5 class="card-title fw-bold">Microsoft</h5>
+          <p class="text-muted mb-1">Software Engineer</p>
+          <small>2017 - 2018</small>
+          <a href="#" class="btn btn-outline-info mt-3">Read More</a>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+</body>
+
+</html>

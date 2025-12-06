@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+        .carousel-item {
+            height: 600px;
+            object-fit: cover;
+        }
+    </style>
+    <style>
+   
+
+        .nav-link:hover {
+            color: #ffdd57 !important;
+        }
+
+        .card {
+            border-radius: 15px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+        }
+
+    
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-success sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-dark" href="index.html">BIPUL CHAKMA</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 column-gap-4">
+                    <li class="nav-item"><a class="nav-link  text-light active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link  text-light" href="about.html" >About</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link  text-light" href="Portfolio.html"
+                           >Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link  text-light" href="service.html" >Service</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link  text-light" href="contact.html" >Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+                <img src="/image/1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="/image/2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="/image/3.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center pb-3 fs-2 fw-bold">Mission & Vision</h2>
+            <div class="row row-gap-3">
+                <div class="col-lg-6">
+                    <div class="card bg-dark text-light">
+                        <div class="card-body ">
+                            <h5 class="card-title fw-bold">Mission</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus,
+                                iusto. Consequuntur accusantium labore nulla repellat, quia nam eaque minus incidunt
+                                quam totam praesentium fuga est laboriosam harum dignissimos saepe at. Quasi autem quo
+                                fuga, vel, repellendus rerum commodi accusantium optio quae tenetur dolorem adipisci
+                                quos totam nobis modi? Aliquam dolores sequi sint nam! Hic, ex perferendis. Voluptatum
+                                animi nam saepe est esse nobis eligendi, architecto laboriosam. Eveniet totam porro </p>
+                            <a href="#" class="card-link btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card bg-dark text-light">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Vision</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod quia
+                                reiciendis sapiente dolorem, officia, nemo nisi perspiciatis labore aliquam maiores
+                                unde. Libero amet sapiente quisquam perspiciatis quod, rem nam sit, omnis officia optio
+                                repudiandae a odio distinctio sunt vero quas quaerat nemo necessitatibus aperiam
+                                voluptatem. Excepturi iure quisquam tempore, vero natus repellat repudiandae, autem
+                                nostrum minima veritatis sunt ad exercitationem quo officia adipisci, earum quas ea
+                                cupiditate nesciunt </p>
+                            <a href="#" class="card-link btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="py-5">
+        <div class="container">
+            <h2 class="fw-bold text-center pb-3">MY SERVICE</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card">
+                        <img src="/image/web.jfif" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Web Development</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                                to additional content. This content is a little bit longer.</p>
+                            <a href="#" class="card-link btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="/image/app.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">App Development</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                                to additional content. This content is a little bit longer.</p>
+                            <a href="#" class="card-link btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="/image/bootstarp.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Bootstarp</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                                to additional content.</p>
+                            <a href="#" class="card-link btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="/image/javascript.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Javascript</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                                to additional content. This content is a little bit longer.</p>
+                            <a href="#" class="card-link btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="/image/bootstarp.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Bootstarp</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                                to additional content.</p>
+                            <a href="#" class="card-link btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="/image/javascript.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Javascript</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                                to additional content. This content is a little bit longer.</p>
+                            <a href="#" class="card-link btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <section class="container py-5">
+        <div class="text-center mb-5">
+            <h2>Client Feedback</h2>
+            <p>What our clients say about working with us.</p>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card h-100 text-center border-0 shadow-sm">
+                    <div class="card-body">
+                        <img src="/image/profile.jpg" class="rounded-circle mb-3" alt="John Leo" width="80" height="80">
+                        <h5 class="card-title mb-1">John Leo</h5>
+                        <small class="text-muted d-block mb-2">CEO, ExampleCorp</small>
+                        <p class="card-text fst-italic">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Dignissimos officia hic corporis molestias quas molestiae ipsam, commodi repellat labore at.
+                        </p>
+                        <div class="text-warning mb-3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 text-center border-0 shadow-sm">
+                    <div class="card-body">
+                        <img src="/image/mission.jpg" class="rounded-circle mb-3" alt="Robert Halk" width="80" height="80">
+                        <h5 class="card-title mb-1">Robert Halk</h5>
+                        <small class="text-muted d-block mb-2">CEO, ExampleCorp</small>
+                        <p class="card-text fst-italic">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Dignissimos officia hic corporis molestias quas molestiae ipsam, commodi repellat labore at.
+                        </p>
+                        <div class="text-warning mb-3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 text-center border-0 shadow-sm">
+                    <div class="card-body">
+                        <img src="/image/profile.jpg" class="rounded-circle mb-3" alt="Siuly" width="80" height="80">
+                        <h5 class="card-title mb-1">Siuly</h5>
+                        <small class="text-muted d-block mb-2">CEO, ExampleCorp</small>
+                        <p class="card-text fst-italic">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Dignissimos officia hic corporis molestias quas molestiae ipsam, commodi repellat labore at.
+                        </p>
+                        <div class="text-warning mb-3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 text-center border-0 shadow-sm">
+                    <div class="card-body">
+                        <img src="/image/mission.jpg" class="rounded-circle mb-3" alt="Robert Halk" width="80" height="80">
+                        <h5 class="card-title mb-1">Robert Halk</h5>
+                        <small class="text-muted d-block mb-2">CEO, ExampleCorp</small>
+                        <p class="card-text fst-italic">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Dignissimos officia hic corporis molestias quas molestiae ipsam, commodi repellat labore at.
+                        </p>
+                        <div class="text-warning mb-3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 text-center border-0 shadow-sm">
+                    <div class="card-body">
+                        <img src="/image/mission.jpg" class="rounded-circle mb-3" alt="Robert Halk" width="80" height="80">
+                        <h5 class="card-title mb-1">Robert Halk</h5>
+                        <small class="text-muted d-block mb-2">CEO, ExampleCorp</small>
+                        <p class="card-text fst-italic">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Dignissimos officia hic corporis molestias quas molestiae ipsam, commodi repellat labore at.
+                        </p>
+                        <div class="text-warning mb-3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 text-center border-0 shadow-sm">
+                    <div class="card-body">
+                        <img src="/image/profile.jpg" class="rounded-circle mb-3" alt="Robert Halk" width="80" height="80">
+                        <h5 class="card-title mb-1">Robert Halk</h5>
+                        <small class="text-muted d-block mb-2">CEO, ExampleCorp</small>
+                        <p class="card-text fst-italic">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Dignissimos officia hic corporis molestias quas molestiae ipsam, commodi repellat labore at.
+                        </p>
+                        <div class="text-warning mb-3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
